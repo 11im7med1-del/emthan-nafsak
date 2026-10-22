@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة امتحن نفسك - تاريخ الأردن</title>
+  <!-- Tailwind CSS للتصميم السريع والفخم -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- خط تجوال العربي الرسمي -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Tajawal', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-950">
+
+  <!-- 1. الهيدر العلوي -->
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="bg-emerald-500 text-slate-950 font-black w-10 h-10 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-emerald-500/20">
+          ن
+        </div>
+        <div>
+          <h1 class="text-lg font-bold leading-none">منصة امتحن نفسك</h1>
+          <span class="text-xs text-slate-400">تاريخ الأردن - الصف الحادي عشر</span>
+        </div>
+      </div>
+      <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-3 py-1 rounded-full font-medium">
+        ⚡ طاقة استيعابية +10,000 طالب
+      </span>
+    </div>
+  </header>
+
+  <!-- 2. محتوى الصفحة الرئيسية -->
+  <main class="max-w-5xl mx-auto px-4 py-12 my-auto">
+    
+    <!-- العنونة الرئيسية -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 px-4 py-1.5 rounded-full text-xs font-medium text-emerald-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        نظام الامتحانات العشوائي المتقدم
+      </div>
+      
+      <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight">
+        مرحباً بك في منصة <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
+          امتحن نفسك الذكية
+        </span>
+      </h2>
+
+      <p class="text-slate-400 text-base md:text-lg leading-relaxed">
+        المنصة الأولى المخصصة لمادة تاريخ الأردن. يتم توليد الأسئلة وترتيب الخيارات عشوائياً لكل طالب من بنك أسئلة ضخم يضم 3,000 سؤال مراجع بدقة.
+      </p>
+    </div>
+
+    <!-- كروت الدخول (طالب / أستاذ) -->
+    <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+      
+      <!-- كارت الطالب -->
+      <div class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/40 transition-all p-6 rounded-2xl flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            🎓
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-white">بوابة تقديم الامتحان</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+            ادخل اسمك واختر الوحدة الدراسية لبدء امتحانك المخصص مع نظام التصحيح الفوري والمؤقت الزمني.
+          </p>
+        </div>
+        <button onclick="alert('رح ننتقل لصفحة اختيار الامتحان بالخطوة الجاية!')" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl transition shadow-lg shadow-emerald-500/10 flex items-center justify-center gap-2">
+          <span>ابدأ الامتحان الآن</span>
+          <span>←</span>
+        </button>
+      </div>
+
+      <!-- كارت الأستاذ -->
+      <div class="bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 transition-all p-6 rounded-2xl flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            👨‍🏫
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-white">لوحة تحكم معلم المادة</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+            متابعة نتائج الطلاب، استعراض الإحصائيات، وإدارة بنك الأسئلة الخاص بالفصل الدراسي الأول.
+          </p>
+        </div>
+        <button onclick="alert('رح نفتح لوحة التحكم الخاصة بالأستاذ!')" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-3 px-4 rounded-xl transition border border-slate-600 flex items-center justify-center gap-2">
+          <span>دخول المعلم</span>
+          <span>🔒</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- مميزات المنصة السريعة -->
+    <div class="grid sm:grid-cols-3 gap-4 border-t border-slate-800/80 pt-10 text-right">
+      <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-800/50">
+        <div class="text-emerald-400 font-bold text-base mb-1">🎲 خوارزمية الشقلبة</div>
+        <p class="text-slate-400 text-xs">ترتيب أسئلة وخيارات مختلف لكل طالب لمنع التخمين والغش.</p>
+      </div>
+      <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-800/50">
+        <div class="text-emerald-400 font-bold text-base mb-1">⏱️ حفظ تلقائي</div>
+        <p class="text-slate-400 text-xs">حفظ إجابات الطالب سحابياً حتى لو انقطع الاتصال بالإنترنت.</p>
+      </div>
+      <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-800/50">
+        <div class="text-emerald-400 font-bold text-base mb-1">📊 نتائج فورية</div>
+        <p class="text-slate-400 text-xs">عرض العلامة فور إكمال الامتحان مع تحليل الإجابات الصحيحة.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 3. الفوتر -->
+  <footer class="border-t border-slate-900 bg-slate-950 p-6 text-center text-slate-500 text-xs">
+    منصة "امتحن نفسك" - تم التطوير بشغف لخدمة التعليم © 2026
+  </footer>
+
+</body>
+</html>
